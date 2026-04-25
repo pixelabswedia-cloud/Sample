@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koleksi Kecantikan | Minimalist & Clean</title>
     <style>
-        /* Pengaturan Dasar */
+        /* --- ESTETIKA RARE BEAUTY (MINIMALIS & SOFT) --- */
         * {
             margin: 0;
             padding: 0;
@@ -14,11 +14,9 @@
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             color: #333;
-            background-color: #faf9f8; /* Warna latar belakang off-white/nude */
+            background-color: #faf9f8;
             line-height: 1.6;
         }
-
-        /* Navigasi / Header */
         header {
             display: flex;
             justify-content: space-between;
@@ -36,47 +34,18 @@
             letter-spacing: 2px;
             text-transform: uppercase;
         }
-        nav a {
-            text-decoration: none;
-            color: #333;
-            margin-left: 20px;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Bagian Hero (Spanduk Utama) */
         .hero {
-            background-color: #f7e9e8; /* Warna pink blush khas Rare Beauty */
+            background-color: #f7e9e8; 
             text-align: center;
-            padding: 120px 20px;
+            padding: 100px 20px;
         }
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 500;
             margin-bottom: 20px;
         }
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
-            color: #555;
-        }
-        .btn-primary {
-            background-color: #333;
-            color: #fff;
-            padding: 15px 40px;
-            text-decoration: none;
-            border-radius: 30px;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: background 0.3s;
-        }
-        .btn-primary:hover {
-            background-color: #555;
-        }
 
-        /* Bagian Produk */
+        /* --- GRID PRODUK --- */
         .products-section {
             padding: 80px 5%;
             text-align: center;
@@ -89,48 +58,72 @@
         .product-grid {
             display: flex;
             justify-content: space-between;
-            gap: 20px;
+            gap: 25px;
+            flex-wrap: wrap;
         }
         .product-card {
-            width: 32%;
-            text-align: left;
+            width: 31%;
             background: #fff;
             padding-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            text-align: left;
         }
         .product-card img {
             width: 100%;
-            height: auto;
-            aspect-ratio: 4/5;
+            height: 350px;
             object-fit: cover;
             background-color: #eaeaea;
         }
         .product-info {
-            padding: 15px 10px;
+            padding: 20px;
         }
         .product-name {
             font-weight: bold;
             font-size: 1.1rem;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
         .product-price {
             color: #666;
             font-size: 1rem;
+            margin-bottom: 20px;
         }
 
-        /* Responsif untuk HP */
+        /* --- TOMBOL CHECKOUT --- */
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .btn {
+            padding: 12px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: opacity 0.3s;
+            width: 100%;
+        }
+        .btn:hover {
+            opacity: 0.8;
+        }
+        .btn-wa {
+            background-color: #25D366; /* Hijau WhatsApp */
+            color: white;
+        }
+        .btn-shopee {
+            background-color: #EE4D2D; /* Oranye Shopee */
+            color: white;
+        }
+
+        /* Responsif HP */
         @media (max-width: 768px) {
-            .product-grid {
-                flex-direction: column;
-            }
             .product-card {
                 width: 100%;
-                margin-bottom: 20px;
-            }
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            nav {
-                display: none; /* Disembunyikan untuk kesederhanaan di HP */
             }
         }
     </style>
@@ -138,46 +131,75 @@
 <body>
 
     <header>
-        <div class="logo">Merek Kosmetik</div>
-        <nav>
-            <a href="#">Belanja</a>
-            <a href="#">Tentang Kami</a>
-            <a href="#">Masuk</a>
-        </nav>
+        <div class="logo">BEAUTY GLOW</div>
     </header>
 
     <section class="hero">
-        <h1>Kecantikan yang Terasa Nyata.</h1>
-        <p>Rayakan keunikanmu dengan koleksi terbaru kami yang ringan dan tahan lama.</p>
-        <a href="#" class="btn-primary">Belanja Sekarang</a>
+        <h1>Kecantikan Sehari-hari.</h1>
+        <p>Temukan produk favoritmu dan pesan dengan mudah via WhatsApp atau Shopee.</p>
     </section>
 
     <section class="products-section">
-        <h2>Pilihan Favorit</h2>
+        <h2>Koleksi Terlaris</h2>
         <div class="product-grid">
+
             <div class="product-card">
-                <img src="https://via.placeholder.com/400x500/f7e9e8/333333?text=Gambar+Blush" alt="Liquid Blush">
+                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Scarlett Whitening">
                 <div class="product-info">
-                    <div class="product-name">Soft Pinch Liquid Blush</div>
-                    <div class="product-price">Rp 350.000</div>
+                    <div class="product-name">Scarlett Whitening Body Lotion</div>
+                    <div class="product-price">Rp 75.000</div>
+                    <div class="action-buttons">
+                        <button class="btn btn-wa" onclick="pesanViaWA('Scarlett Whitening Body Lotion', '75.000')">Beli via WhatsApp</button>
+                        <a href="https://shopee.co.id/namatokomu/idproduk1" class="btn btn-shopee" target="_blank">Beli di Shopee</a>
+                    </div>
                 </div>
             </div>
+
             <div class="product-card">
-                <img src="https://via.placeholder.com/400x500/f7e9e8/333333?text=Gambar+Foundation" alt="Foundation">
+                <img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Glad2Glow Moisturizer">
                 <div class="product-info">
-                    <div class="product-name">Liquid Touch Foundation</div>
-                    <div class="product-price">Rp 480.000</div>
+                    <div class="product-name">Glad2Glow Pomegranate Moisturizer</div>
+                    <div class="product-price">Rp 45.000</div>
+                    <div class="action-buttons">
+                        <button class="btn btn-wa" onclick="pesanViaWA('Glad2Glow Pomegranate Moisturizer', '45.000')">Beli via WhatsApp</button>
+                        <a href="https://shopee.co.id/namatokomu/idproduk2" class="btn btn-shopee" target="_blank">Beli di Shopee</a>
+                    </div>
                 </div>
             </div>
+
             <div class="product-card">
-                <img src="https://via.placeholder.com/400x500/f7e9e8/333333?text=Gambar+Lip+Oil" alt="Lip Oil">
+                <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="OMG Lip Cream">
                 <div class="product-info">
-                    <div class="product-name">Tinted Lip Oil</div>
-                    <div class="product-price">Rp 290.000</div>
+                    <div class="product-name">OMG Oh My Glam Matte Kiss Lip Cream</div>
+                    <div class="product-price">Rp 25.000</div>
+                    <div class="action-buttons">
+                        <button class="btn btn-wa" onclick="pesanViaWA('OMG Oh My Glam Matte Kiss Lip Cream', '25.000')">Beli via WhatsApp</button>
+                        <a href="https://shopee.co.id/namatokomu/idproduk3" class="btn btn-shopee" target="_blank">Beli di Shopee</a>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
+
+    <script>
+        function pesanViaWA(namaProduk, hargaProduk) {
+            // 1. Ganti dengan nomor WhatsApp tokomu (Gunakan 62 sebagai pengganti 0)
+            const nomorWA = "6281234567890"; 
+
+            // 2. Format pesan yang akan terkirim otomatis
+            const pesan = `Halo Admin Beauty Glow! 👋\n\nSaya tertarik untuk memesan:\nProduk: *${namaProduk}*\nHarga: Rp ${hargaProduk}\n\nApakah stoknya masih tersedia?`;
+
+            // 3. Mengubah teks pesan agar aman untuk URL (mengubah spasi menjadi %20, dll)
+            const pesanEncode = encodeURIComponent(pesan);
+
+            // 4. Membuat link WhatsApp
+            const linkWA = `https://wa.me/${nomorWA}?text=${pesanEncode}`;
+
+            // 5. Buka WhatsApp di tab baru
+            window.open(linkWA, '_blank');
+        }
+    </script>
 
 </body>
 </html>
