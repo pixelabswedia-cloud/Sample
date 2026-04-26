@@ -1,205 +1,93 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koleksi Kecantikan | Minimalist & Clean</title>
-    <style>
-        /* --- ESTETIKA RARE BEAUTY (MINIMALIS & SOFT) --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            color: #333;
-            background-color: #faf9f8;
-            line-height: 1.6;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 5%;
-            background-color: #fff;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 1px solid #eaeaea;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        .hero {
-            background-color: #f7e9e8; 
-            text-align: center;
-            padding: 100px 20px;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 500;
-            margin-bottom: 20px;
-        }
-
-        /* --- GRID PRODUK --- */
-        .products-section {
-            padding: 80px 5%;
-            text-align: center;
-        }
-        .products-section h2 {
-            font-size: 2rem;
-            margin-bottom: 50px;
-            font-weight: 500;
-        }
-        .product-grid {
-            display: flex;
-            justify-content: space-between;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-        .product-card {
-            width: 31%;
-            background: #fff;
-            padding-bottom: 20px;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            text-align: left;
-        }
-        .product-card img {
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-            background-color: #eaeaea;
-        }
-        .product-info {
-            padding: 20px;
-        }
-        .product-name {
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin-bottom: 8px;
-        }
-        .product-price {
-            color: #666;
-            font-size: 1rem;
-            margin-bottom: 20px;
-        }
-
-        /* --- TOMBOL CHECKOUT --- */
-        .action-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .btn {
-            padding: 12px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 14px;
-            font-weight: bold;
-            cursor: pointer;
-            border: none;
-            transition: opacity 0.3s;
-            width: 100%;
-        }
-        .btn:hover {
-            opacity: 0.8;
-        }
-        .btn-wa {
-            background-color: #25D366; /* Hijau WhatsApp */
-            color: white;
-        }
-        .btn-shopee {
-            background-color: #EE4D2D; /* Oranye Shopee */
-            color: white;
-        }
-
-        /* Responsif HP */
-        @media (max-width: 768px) {
-            .product-card {
-                width: 100%;
-            }
-        }
-    </style>
+    <title>Premium Herbal Solutions | Natural Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-50 font-sans">
 
-    <header>
-        <div class="logo">BEAUTY GLOW</div>
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-green-600">Herba<span class="text-gray-800">Life</span></div>
+            <a href="#order" class="bg-green-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 transition">Order Now</a>
+        </div>
+    </nav>
+
+    <header class="relative bg-white pt-16 pb-32 flex flex-col items-center text-center px-4">
+        <span class="text-green-600 font-bold tracking-widest uppercase text-sm mb-4">100% Organic & Non-GMO</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 max-w-4xl leading-tight">
+            Unlock Your Body's Natural Potential with <span class="text-green-600">Pure Herbal Extract</span>
+        </h1>
+        <p class="mt-6 text-xl text-gray-600 max-w-2xl">
+            Experience the power of nature. Clinically proven formulas designed to boost your energy, immunity, and overall well-being.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+            <a href="#order" class="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-bold shadow-lg hover:bg-green-700 transition transform hover:-translate-y-1">
+                Get Special Discount Today
+            </a>
+        </div>
+        <div class="mt-8 flex items-center gap-2 text-sm text-gray-500">
+            <i class="fas fa-check-circle text-green-500"></i> FDA Approved Facility 
+            <i class="fas fa-check-circle text-green-500 ml-4"></i> 60-Day Money Back Guarantee
+        </div>
     </header>
 
-    <section class="hero">
-        <h1>Kecantikan Sehari-hari.</h1>
-        <p>Temukan produk favoritmu dan pesan dengan mudah via WhatsApp atau Shopee.</p>
-    </section>
-
-    <section class="products-section">
-        <h2>Koleksi Terlaris</h2>
-        <div class="product-grid">
-
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Scarlett Whitening">
-                <div class="product-info">
-                    <div class="product-name">Scarlett Whitening Body Lotion</div>
-                    <div class="product-price">Rp 75.000</div>
-                    <div class="action-buttons">
-                        <button class="btn btn-wa" onclick="pesanViaWA('Scarlett Whitening Body Lotion', '75.000')">Beli via WhatsApp</button>
-                        <a href="https://shopee.co.id/namatokomu/idproduk1" class="btn btn-shopee" target="_blank">Beli di Shopee</a>
-                    </div>
+    <section class="py-20 bg-green-50">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-12">
+            <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-leaf text-2xl"></i>
                 </div>
+                <h3 class="text-xl font-bold mb-4">Pure Ingredients</h3>
+                <p class="text-gray-600">Sourced directly from organic farms with zero synthetic additives.</p>
             </div>
-
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Glad2Glow Moisturizer">
-                <div class="product-info">
-                    <div class="product-name">Glad2Glow Pomegranate Moisturizer</div>
-                    <div class="product-price">Rp 45.000</div>
-                    <div class="action-buttons">
-                        <button class="btn btn-wa" onclick="pesanViaWA('Glad2Glow Pomegranate Moisturizer', '45.000')">Beli via WhatsApp</button>
-                        <a href="https://shopee.co.id/namatokomu/idproduk2" class="btn btn-shopee" target="_blank">Beli di Shopee</a>
-                    </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-shield-alt text-2xl"></i>
                 </div>
+                <h3 class="text-xl font-bold mb-4">Science Backed</h3>
+                <p class="text-gray-600">Formulated based on rigorous clinical research for maximum efficacy.</p>
             </div>
-
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="OMG Lip Cream">
-                <div class="product-info">
-                    <div class="product-name">OMG Oh My Glam Matte Kiss Lip Cream</div>
-                    <div class="product-price">Rp 25.000</div>
-                    <div class="action-buttons">
-                        <button class="btn btn-wa" onclick="pesanViaWA('OMG Oh My Glam Matte Kiss Lip Cream', '25.000')">Beli via WhatsApp</button>
-                        <a href="https://shopee.co.id/namatokomu/idproduk3" class="btn btn-shopee" target="_blank">Beli di Shopee</a>
-                    </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-shipping-fast text-2xl"></i>
                 </div>
+                <h3 class="text-xl font-bold mb-4">Global Shipping</h3>
+                <p class="text-gray-600">Fast and secure shipping to USA, Canada, UK, and Australia.</p>
             </div>
-
         </div>
     </section>
 
-    <script>
-        function pesanViaWA(namaProduk, hargaProduk) {
-            // 1. Ganti dengan nomor WhatsApp tokomu (Gunakan 62 sebagai pengganti 0)
-            const nomorWA = "6281234567890"; 
+    <section id="order" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-12">Choose Your Package</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="border-2 border-gray-200 p-8 rounded-3xl hover:border-green-500 transition">
+                    <h4 class="text-xl font-bold">Basic Supply</h4>
+                    <p class="text-gray-500 mb-6">1 Bottle (30 Day Supply)</p>
+                    <div class="text-4xl font-black mb-6">$69 <span class="text-lg text-gray-400 font-normal">/bottle</span></div>
+                    <a href="LINK_AFFILIATE_ANDA_DISINI" class="block bg-gray-800 text-white py-3 rounded-xl font-bold hover:bg-black transition">Buy Now</a>
+                </div>
+                <div class="border-4 border-green-500 p-8 rounded-3xl bg-green-50 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-1 rounded-full text-sm font-bold">BEST VALUE</div>
+                    <h4 class="text-xl font-bold">Premium Bundle</h4>
+                    <p class="text-gray-500 mb-6">3 Bottles + Free Shipping</p>
+                    <div class="text-4xl font-black mb-6">$49 <span class="text-lg text-gray-400 font-normal">/bottle</span></div>
+                    <a href="LINK_AFFILIATE_ANDA_DISINI" class="block bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition">Claim Discount Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            // 2. Format pesan yang akan terkirim otomatis
-            const pesan = `Halo Admin Beauty Glow! 👋\n\nSaya tertarik untuk memesan:\nProduk: *${namaProduk}*\nHarga: Rp ${hargaProduk}\n\nApakah stoknya masih tersedia?`;
-
-            // 3. Mengubah teks pesan agar aman untuk URL (mengubah spasi menjadi %20, dll)
-            const pesanEncode = encodeURIComponent(pesan);
-
-            // 4. Membuat link WhatsApp
-            const linkWA = `https://wa.me/${nomorWA}?text=${pesanEncode}`;
-
-            // 5. Buka WhatsApp di tab baru
-            window.open(linkWA, '_blank');
-        }
-    </script>
+    <footer class="bg-gray-900 text-gray-400 py-12 px-4 text-center">
+        <p class="mb-4">© 2026 HerbaLife Global. All rights reserved.</p>
+        <p class="text-xs max-w-2xl mx-auto">
+            *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
+        </p>
+    </footer>
 
 </body>
 </html>
