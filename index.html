@@ -6,86 +6,177 @@
     <title>Premium Herbal Solutions | Natural Wellness</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-50 font-sans text-gray-900">
 
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold text-green-600">Herba<span class="text-gray-800">Life</span></div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#features" class="hover:text-green-600">Benefits</a>
+                <a href="#testimonials" class="hover:text-green-600">Reviews</a>
+                <a href="#faq" class="hover:text-green-600">FAQ</a>
+            </div>
             <a href="#order" class="bg-green-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 transition">Order Now</a>
         </div>
     </nav>
 
-    <header class="relative bg-white pt-16 pb-32 flex flex-col items-center text-center px-4">
-        <span class="text-green-600 font-bold tracking-widest uppercase text-sm mb-4">100% Organic & Non-GMO</span>
+    <header class="relative bg-white pt-16 pb-20 flex flex-col items-center text-center px-4">
+        <span class="text-green-600 font-bold tracking-widest uppercase text-sm mb-4 italic">100% Organic & Non-GMO</span>
         <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 max-w-4xl leading-tight">
             Unlock Your Body's Natural Potential with <span class="text-green-600">Pure Herbal Extract</span>
         </h1>
         <p class="mt-6 text-xl text-gray-600 max-w-2xl">
             Experience the power of nature. Clinically proven formulas designed to boost your energy, immunity, and overall well-being.
         </p>
+
+        <div class="mt-10 mb-6">
+            <img src="assets/product.jpg" 
+                 alt="Premium Herbal Product Bottle" 
+                 class="mx-auto w-full max-w-md rounded-2xl shadow-2xl transform hover:scale-105 transition duration-500">
+        </div>
+
         <div class="mt-10 flex flex-col sm:flex-row gap-4">
-            <a href="#order" class="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-bold shadow-lg hover:bg-green-700 transition transform hover:-translate-y-1">
+            <a href="#order" class="bg-green-600 text-white px-10 py-4 rounded-lg text-lg font-bold shadow-lg hover:bg-green-700 transition transform hover:-translate-y-1">
                 Get Special Discount Today
             </a>
         </div>
-        <div class="mt-8 flex items-center gap-2 text-sm text-gray-500">
-            <i class="fas fa-check-circle text-green-500"></i> FDA Approved Facility 
-            <i class="fas fa-check-circle text-green-500 ml-4"></i> 60-Day Money Back Guarantee
+        <div class="mt-8 flex items-center justify-center gap-4 text-sm text-gray-500">
+            <span><i class="fas fa-check-circle text-green-500"></i> FDA Approved Facility</span>
+            <span><i class="fas fa-check-circle text-green-500"></i> 60-Day Guarantee</span>
         </div>
     </header>
 
-    <section class="py-20 bg-green-50">
+    <section id="features" class="py-20 bg-green-50">
         <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-12">
             <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
                 <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <i class="fas fa-leaf text-2xl"></i>
                 </div>
                 <h3 class="text-xl font-bold mb-4">Pure Ingredients</h3>
-                <p class="text-gray-600">Sourced directly from organic farms with zero synthetic additives.</p>
+                <p class="text-gray-600">Sourced directly from organic farms with zero synthetic additives or harmful fillers.</p>
             </div>
             <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
                 <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <i class="fas fa-shield-alt text-2xl"></i>
                 </div>
                 <h3 class="text-xl font-bold mb-4">Science Backed</h3>
-                <p class="text-gray-600">Formulated based on rigorous clinical research for maximum efficacy.</p>
+                <p class="text-gray-600">Formulated based on rigorous clinical research for maximum absorption and efficacy.</p>
             </div>
             <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
                 <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <i class="fas fa-shipping-fast text-2xl"></i>
                 </div>
                 <h3 class="text-xl font-bold mb-4">Global Shipping</h3>
-                <p class="text-gray-600">Fast and secure shipping to USA, Canada, UK, and Australia.</p>
+                <p class="text-gray-600">Fast and secure shipping to USA, Canada, UK, and Australia with real-time tracking.</p>
             </div>
         </div>
     </section>
 
     <section id="order" class="py-24 bg-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-12">Choose Your Package</h2>
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Choose Your Package</h2>
+            <p class="text-gray-600 mb-12 text-lg">Select the best option for your health journey.</p>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="border-2 border-gray-200 p-8 rounded-3xl hover:border-green-500 transition">
+                <div class="border-2 border-gray-200 p-8 rounded-3xl hover:border-green-500 transition flex flex-col">
                     <h4 class="text-xl font-bold">Basic Supply</h4>
                     <p class="text-gray-500 mb-6">1 Bottle (30 Day Supply)</p>
-                    <div class="text-4xl font-black mb-6">$69 <span class="text-lg text-gray-400 font-normal">/bottle</span></div>
-                    <a href="LINK_AFFILIATE_ANDA_DISINI" class="block bg-gray-800 text-white py-3 rounded-xl font-bold hover:bg-black transition">Buy Now</a>
+                    <div class="text-5xl font-black mb-6">$69 <span class="text-lg text-gray-400 font-normal">/bottle</span></div>
+                    <ul class="text-left space-y-3 mb-8 flex-grow">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> High Quality Extract</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 30 Day Supply</li>
+                        <li class="text-gray-400"><i class="fas fa-times mr-2"></i> Free Shipping</li>
+                    </ul>
+                    <a href="YOUR_AFFILIATE_LINK_HERE" class="block bg-gray-800 text-white py-4 rounded-xl font-bold hover:bg-black transition">Buy Now</a>
                 </div>
-                <div class="border-4 border-green-500 p-8 rounded-3xl bg-green-50 relative">
-                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-1 rounded-full text-sm font-bold">BEST VALUE</div>
+                <div class="border-4 border-green-500 p-8 rounded-3xl bg-green-50 relative flex flex-col">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-1 rounded-full text-sm font-bold tracking-wide">BEST VALUE</div>
                     <h4 class="text-xl font-bold">Premium Bundle</h4>
                     <p class="text-gray-500 mb-6">3 Bottles + Free Shipping</p>
-                    <div class="text-4xl font-black mb-6">$49 <span class="text-lg text-gray-400 font-normal">/bottle</span></div>
-                    <a href="LINK_AFFILIATE_ANDA_DISINI" class="block bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition">Claim Discount Now</a>
+                    <div class="text-5xl font-black mb-6 text-green-600">$49 <span class="text-lg text-gray-400 font-normal text-gray-800">/bottle</span></div>
+                    <ul class="text-left space-y-3 mb-8 flex-grow">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> High Quality Extract</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 90 Day Supply</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> <strong>Free Global Shipping</strong></li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Save $60 Instantly</li>
+                    </ul>
+                    <a href="YOUR_AFFILIATE_LINK_HERE" class="block bg-green-600 text-white py-4 rounded-xl font-bold hover:bg-green-700 transition shadow-lg">Claim My Discount</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-gray-400 py-12 px-4 text-center">
-        <p class="mb-4">© 2026 HerbaLife Global. All rights reserved.</p>
-        <p class="text-xs max-w-2xl mx-auto">
-            *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-12">What Our Customers Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-left">
+                    <div class="flex text-yellow-400 mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic">"I've tried many supplements, but this one actually works. My energy levels are through the roof!"</p>
+                    <div class="mt-6 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+                        <p class="font-bold text-gray-900">Sarah J., <span class="font-normal text-gray-500">USA</span></p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-left">
+                    <div class="flex text-yellow-400 mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic">"Fast shipping to London and the packaging was very professional. Highly recommend!"</p>
+                    <div class="mt-6 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+                        <p class="font-bold text-gray-900">David K., <span class="font-normal text-gray-500">UK</span></p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-left">
+                    <div class="flex text-yellow-400 mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic">"Natural and effective. I feel much better throughout the day. Definitely buying again."</p>
+                    <div class="mt-6 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+                        <p class="font-bold text-gray-900">Emma L., <span class="font-normal text-gray-500">Australia</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+                <div class="border-b pb-4">
+                    <h4 class="font-bold text-lg mb-2">How long does shipping take?</h4>
+                    <p class="text-gray-600">Standard shipping takes 3-5 business days for domestic orders and 7-14 days for international delivery depending on your location.</p>
+                </div>
+                <div class="border-b pb-4">
+                    <h4 class="font-bold text-lg mb-2">Is there a money-back guarantee?</h4>
+                    <p class="text-gray-600">Yes! We offer a 60-day, 100% money-back guarantee. If you are not satisfied with the results, simply return the bottles for a full refund.</p>
+                </div>
+                <div class="border-b pb-4">
+                    <h4 class="font-bold text-lg mb-2">Are these supplements safe?</h4>
+                    <p class="text-gray-600">Our products are made in FDA-registered facilities and follow strict GMP (Good Manufacturing Practice) guidelines to ensure the highest safety and purity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-16 px-4 text-center">
+        <div class="text-2xl font-bold text-white mb-6">Herba<span class="text-green-500">Life</span></div>
+        <div class="flex justify-center space-x-6 mb-8 text-sm uppercase tracking-widest">
+            <a href="#" class="hover:text-white">Terms</a>
+            <a href="#" class="hover:text-white">Privacy</a>
+            <a href="#" class="hover:text-white">Contact</a>
+        </div>
+        <p class="mb-4 text-sm italic">© 2026 HerbaLife Global. All rights reserved.</p>
+        <p class="text-xs max-w-3xl mx-auto leading-relaxed">
+            *DISCLAIMER: These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary from person to person.
         </p>
     </footer>
 
